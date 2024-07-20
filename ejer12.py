@@ -4,3 +4,18 @@
 #usuario la edad del cliente y mostrar el precio de la entrada. Si el cliente
 #es menor de 4 años puede entrar gratis, si tiene entre 4 y 18 años debe
 #pagar 5€ y si es mayor de 18 años, 10€.
+
+#BY GUILLERMO
+edad = int(input("Ingrese la edad del cliente: "))
+def calcular(edad):
+    if edad < 4:
+        precio = 0
+        print("Entra gratis")
+    elif edad <= 18:
+        precio = 5
+        print("El precio es 5€")
+    else:
+        precio = 10
+        print("El precio es 10€")
+    return precio
+entrada = calcular(edad)
